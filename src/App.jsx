@@ -27,7 +27,7 @@ const App = () => {
     <div
       style={{
         minHeight: "100vh",
-        backgroundImage: `url('/background megamendung.png')`,
+        backgroundImage: "url('/background megamendung.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
@@ -36,9 +36,13 @@ const App = () => {
       }}
     >
       <Header colors={colors} scrollToSection={scrollToSection} />
-      
-      <Content colors={colors} projectData={projectData} scrollToSection={scrollToSection} />
-      
+
+      <Content
+        colors={colors}
+        projectData={projectData}
+        scrollToSection={scrollToSection}
+      />
+
       <Footer colors={colors} />
     </div>
   );
